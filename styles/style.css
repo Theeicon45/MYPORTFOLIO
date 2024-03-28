@@ -1,12 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Hind",Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgba(0, 118, 228, 0.281);
 }
 nav {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
     display:flex;
     align-items: center;
@@ -19,7 +19,7 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10vw;
     
    
 }
@@ -28,16 +28,27 @@ nav ul li a {
     text-decoration: none;
     
 }
+
 .frontend{
 
     
     display: flex;
     font-size: 27px;
+    width: 100%;
 }
+
 .frontend img{
     width: 500px;
     border-radius: 10px;
+    background-image: url('images/image.png');
+    background-size: cover;
+    background-attachment: fixed; /* This property fixes the background image while scrolling */
+    height: 100vh; /* Set height of the container to fit the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling within the container */
+    padding: 20px;
+   
 }
+
 #about img{
     height:70vh;
     border-radius: 10px;
