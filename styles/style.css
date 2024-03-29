@@ -29,13 +29,7 @@ nav ul li a {
     
 }
 
-.frontend{
 
-    
-    display: flex;
-    font-size: 27px;
-    width: 100%;
-}
 
 .frontend img{
     width: 500px;
@@ -48,7 +42,21 @@ nav ul li a {
     padding: 20px;
    
 }
+#typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 5s steps(60, end) forwards, blink-caret 0.75s step-end infinite;
+}
 
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-right: 2px solid transparent; }
+    50% { border-right: 2px solid black; }
+}
 #about img{
     height:70vh;
     border-radius: 10px;
